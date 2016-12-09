@@ -1,0 +1,20 @@
+package bob
+
+import (
+	"strings"
+	//"unicode"
+	//"fmt"
+)
+
+const testVersion = 2
+
+func Hey(message string) string {
+	
+	if string(message[len(message)-1]) == "?" {
+		if message == message.ToUpper(message) {
+			return "Whoa, chill out!"
+		}
+		return "Sure."
+	}
+	return "Whatever."
+}
